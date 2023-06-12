@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-<p><img src="assets/fig/propic_enze_2.jpg" alt="Enze Chen" align="middle" width="360px"></p>
+<p><img src="assets/fig/cp.jpeg" alt="Chiku Parida" align="middle" width="360px"></p>
 
 Hello!
 
