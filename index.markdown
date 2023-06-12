@@ -7,7 +7,7 @@ title: Home
 
 Hello!
 
-I am a doctoral researcher in the [DTU Energy](https://www.energy.dtu.dk/){:target="_blank"}
+I am a doctoral researcher at the [DTU Energy](https://www.energy.dtu.dk/){:target="_blank"}
 
 I am extremely grateful to receive funding from the following sources:     
 * 1  
