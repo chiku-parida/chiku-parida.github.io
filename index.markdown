@@ -23,7 +23,6 @@ Here is my [resume](assets/files/resume_general.pdf){:target="_blank"} for a one
 
 ### Recent news
 
-* [**periodically updated**] If you're an **undergraduate** who's looking for a research project, please check my "Teaching" page to see if there is a project that we can work together on.
 
 <!-- 
 comment out the unecessary things
