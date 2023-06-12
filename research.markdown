@@ -6,7 +6,7 @@ image_sliders:
   - slider2
 ---
 
-### Research projects 🔬
+### Research projects
 
 {% include slider.html selector="slider2" %}
 
