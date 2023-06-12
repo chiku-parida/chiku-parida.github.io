@@ -18,12 +18,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Enze Chen (陈恩泽)
-email: chenze@berkeley.edu 
+title: CHIKU PARIDA
+email: chipa@dtu.dk 
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: G-M67T7T5W8G
+google_analytics:
 
 # Build settings
 theme: minima
@@ -37,7 +37,7 @@ header_pages:
   - research.markdown
   - teaching.markdown 
   - hobbies.markdown
-  - about.markdown 
+#  - about.markdown 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
