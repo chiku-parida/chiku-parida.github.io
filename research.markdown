@@ -2,8 +2,10 @@
 layout: page
 title: Research
 permalink: /research/
+<!--
 image_sliders:
   - slider2
+-->
 ---
 
 ### Research projects
@@ -11,7 +13,7 @@ image_sliders:
 comment out the unecessary things
 
 {% include slider.html selector="slider2" %}
- -->
+-->
 
 #### Technical University of Denmark (DTU)
 
