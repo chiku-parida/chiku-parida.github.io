@@ -7,9 +7,11 @@ image_sliders:
 ---
 
 ### Research projects
+<!-- 
+comment out the unecessary things
 
 {% include slider.html selector="slider2" %}
-
+ -->
 
 #### Technical University of Denmark (DTU)
 
