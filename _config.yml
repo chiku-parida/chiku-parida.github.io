@@ -37,7 +37,7 @@ header_pages:
   - research.markdown
   - teaching.markdown 
   - hobbies.markdown
-  - about.markdown 
+#  - about.markdown 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
