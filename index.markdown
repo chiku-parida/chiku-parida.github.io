@@ -15,7 +15,7 @@ I am extremely grateful to receive funding from the following sources:
 * 3
 * 4
 
-Here is my [resume](assets/files/resume_general.pdf){:target="_blank"} for a one-page summary.
+Here is my [resume](assets/files/Chikuparida_dtu_energy_cv.pdf){:target="_blank"} for a one-page summary.
 
 
 ---------------------------------
