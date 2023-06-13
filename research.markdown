@@ -11,7 +11,7 @@ image_sliders:
 {% include slider.html selector="slider2" %}
 
 ### Technical University of Denmark (DTU)
-#### Deep Generative Models for Inverse Design of Solid Electrolytes([PhD Project](https://orbit.dtu.dk/en/projects/deep-generative-models-for-inverse-design-of-solid-electrolytes){:target="_blank"})
+#### Deep Generative Models for Inverse Design of Solid Electrolytes ([PhD Project](https://orbit.dtu.dk/en/projects/deep-generative-models-for-inverse-design-of-solid-electrolytes){:target="_blank"})
 
 <p style="text-align:justify;">Generative models for inverse design of materials refer to a class of machine learning models that are used to create new materials with desired properties. These models utilize deep learning techniques to generate novel material structures or compositions based on input specifications, such as desired physical or chemical properties.</p>
 
