@@ -2,18 +2,10 @@
   bullets: true
   captions: true
   images:
-    - src: /assets/fig/Ti_1124.png
-      title: Interfacial phases in Ti
-      alt: UC Berkeley / LLNL
-    - src: /assets/fig/ucb_nsf.png
-      title: APB in Ni3Al-based alloys
-      alt: UC Berkeley / LLNL
-    - src: /assets/fig/stitchio.png
-      title: Stitch I/O
-      alt: Sandia National Lab
-    - src: /assets/fig/kmc_md.png
-      title: Learning KMC from MD
-      alt: Stanford University
+    - src: /assets/fig/motive.png
+      title: Our goal
+      alt: DTU / DTU Energy
+
   settings:
     height: "'auto'"
     maxHeight: 300
