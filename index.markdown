@@ -23,9 +23,9 @@ Here is my full [resume](assets/files/Chikuparida_dtu_energy_cv.pdf){:target="_b
 <!-- 
 comment out the unecessary things
  -->
+* I am selected for Generative Materials Summer School([GeMSS](https://gemss.ai/){:target="_blank"}), which is going to happen at [Pioneer Centre for Artificial Intelligence](https://www.aicentre.dk/){:target="_blank"}. The summer school targets young researchers (PhD, Postdoc and Research Engineers) who are weeling to use generative models for their research projects. I am going to present a poster in the event. 
 
-
-* Comming soon...
+* Attended CECAM conference on [Open Databases Integration for Materials Design](https://www.cecam.org/workshop-details/1208){:target="_blank"}. The conference and workshop is about the usage and implementation of [OPTIMADE API](https://www.optimade.org/) for high-throughput materials discovery.
 
 
 
