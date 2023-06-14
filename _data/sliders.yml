@@ -5,6 +5,13 @@
     - src: /assets/fig/tt.png
       title: Revisiting the World of Materials
       alt: DTU / DTU Energy
+    - src: /assets/fig/cpvolta.png
+      title: Qpi ET
+      alt: Qpi Volta Pvt. ltd.
+    - src: /assets/fig/pt.png
+      title: Dissolution of Platinum
+      alt: PGDMS / JNCASR
+  
 
   settings:
     height: "'auto'"
