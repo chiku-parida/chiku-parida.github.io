@@ -2,8 +2,8 @@
   bullets: true
   captions: true
   images:
-    - src: /assets/fig/motive.png
-      title: Our goal
+    - src: /assets/fig/ttl.png
+      title: Revisiting the Materials World
       alt: DTU / DTU Energy
 
   settings:
