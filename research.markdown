@@ -35,7 +35,7 @@ Description of the position and project...
 
 #### JNCASR
 
-At Jawaharlal Nehru Centre for Advanced Scientific Research ([JNCASR](https://www.jncasr.ac.in/home){:target="_blank"} I worked in a year long project on atomistic modelling of solid-liquid interface. The project is supervised by [Prof. Shobhana Narasimhan](https://www.jncasr.ac.in/faculty/shobhana){:target="_blank"} and suppuorted by our collaborators, [Dr. Brandon C. Wood](https://qsg.llnl.gov/Site/BrandonWood.html){:target="_blank"} and [Dr. Shubham Sharma](https://www.linkedin.com/in/shubham-sharma-690246a4){:target="_blank"} at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/){:target="_blank"}). In the project I have studied the dissolution of platinum in water using first principle calculations.
+At Jawaharlal Nehru Centre for Advanced Scientific Research ([JNCASR](https://www.jncasr.ac.in/home){:target="_blank"}) I worked in a year long project on atomistic modelling of solid-liquid interface. The project is supervised by [Prof. Shobhana Narasimhan](https://www.jncasr.ac.in/faculty/shobhana){:target="_blank"} and suppuorted by our collaborators, [Dr. Brandon C. Wood](https://qsg.llnl.gov/Site/BrandonWood.html){:target="_blank"} and [Dr. Shubham Sharma](https://www.linkedin.com/in/shubham-sharma-690246a4){:target="_blank"} at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/){:target="_blank"}). In the project I have studied the dissolution of platinum in water using first principle calculations.
 
 
 #### IIT-BHU
