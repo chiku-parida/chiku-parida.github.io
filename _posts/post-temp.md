@@ -1,6 +1,6 @@
 # My Awesome Blog Post
 
-![Cover Image](assets/fig/motive.png)
+![Cover Image](/assets/fig/postfigs/crystal.png)
 
 Welcome to my blog post! In this article, I'll be sharing some valuable insights and tips on a topic that I'm passionate about.
 
