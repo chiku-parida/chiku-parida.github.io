@@ -35,7 +35,8 @@ plugins:
 header_pages:
   - index.markdown
   - research.markdown
-  - teaching.markdown 
+  - teaching.markdown
+  - blogs.markdown
   - hobbies.markdown
   - contacts.markdown 
 
