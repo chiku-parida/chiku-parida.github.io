@@ -1,3 +1,8 @@
+---
+layout: page
+title: My Fiest Blog Post Temp
+---
+
 # My Awesome Blog Post
 
 ![Cover Image](/assets/fig/postfigs/crystal.png)
