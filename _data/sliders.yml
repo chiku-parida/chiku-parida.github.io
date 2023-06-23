@@ -5,6 +5,9 @@
     - src: /assets/fig/tt.png
       title: Revisiting the World of Materials
       alt: DTU Energy / DTU 
+    - src: /assets/fig/id.png
+      title: Inverse Design of Materials
+      alt: DTU Energy / DTU 
     - src: /assets/fig/cpvolta.png
       title: Qpi ET
       alt: Qpi Volta Pvt. Ltd.
@@ -15,7 +18,7 @@
 
   settings:
     height: "'auto'"
-    maxHeight: 1200
+    maxHeight: 900
     effect: "'fade'"
     interval: 5000
     transitionDuration: 500
