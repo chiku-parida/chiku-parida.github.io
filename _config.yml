@@ -39,10 +39,10 @@ header_pages:
   - blogs.markdown
   - hobbies.markdown
   - contacts.markdown 
-
-social_links:
-  - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
-  - { platform: github,         user_url: "https://github.com/jekyll/minima" }
+minima:
+  social_links:
+    - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
+    - { platform: github,         user_url: "https://github.com/jekyll/minima" }
 
 
 
