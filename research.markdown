@@ -13,7 +13,7 @@ image_sliders:
 ### Technical University of Denmark (DTU)
 #### Deep Generative Models for Inverse Design of Solid Electrolytes ([PhD Project](https://orbit.dtu.dk/en/projects/deep-generative-models-for-inverse-design-of-solid-electrolytes){:target="_blank"})
 
-##### Description: 
+#### Description: 
 
 Climate change, which is primarily caused by an increase in CO2 levels in the atmosphere, is one of the biggest problems facing humanity. The long-term answer to this issue is to switch from fossil fuels to green energy. Furthermore, practical and inexpensive energy storage solutions need to be created. Safe and affordable grid-scale batteries are essential for the widespread adoption of renewable energy sources like wind and solar. If we want to make the green transition as fast as possible, we need to speed up the process of discovering new battery materials.
 
@@ -21,7 +21,7 @@ Traditional batteries contain organic and polymer electrolytes that are insuffic
 
 Consequently, the project focuses on the design and accelerated discovery of solid electrolytes.
 
-##### Objective:
+#### Objective:
 
 The main motive of this project is to develop a deep generative model to perform the inverse design of solid electrolytes for Li­-ion
 batteries.
@@ -35,7 +35,7 @@ batteries.
 ### Qpi Volta Technologies
 
 The focus of the Volta team is to bring innovation in energy materials and eco-friendly materials design, especially for solid-state batteries (SSBs), electrocatalysts, environmentally friendly beauty products, drug design and discovery, etc.
-##### Involvements:
+#### Involvements:
 - High-throughput Discovery of Solid Electrolyte for Na-Ion Batteries
 - Machine Learning Interatomic Potentials for Interfaces
 - Potential environmentally friendly materials for various applications
