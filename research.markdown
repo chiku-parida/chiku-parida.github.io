@@ -76,7 +76,7 @@ Link to the publication site...
     <p>I am a doctoral researcher at <a href="https://www.energy.dtu.dk/" target="_blank">DTU Energy</a>, where I am working on the inverse design of solid electrolytes for solid-state batteries (for more information, please see my research section). <a href="https://orbit.dtu.dk/en/persons/juan-maria-garc%C3%ADa-lastra" target="_blank">Prof. Juan Maria García Lastra</a> and <a href="https://orbit.dtu.dk/en/persons/arghya-bhowmik" target="_blank">Dr. Arghya Bhowmik</a> are the project supervisors at DTU Energy. This project is associated with the <a href="https://aibn.uq.edu.au/" target="_blank">University of Queensland</a>. <a href="https://aibn.uq.edu.au/bernhardt" target="_blank">Prof. Debra Bernhardt</a> from the University of Queensland is our collaborator. She is co-supervising the project and supporting my external stay in Australia.</p>
   </div>
   <div style="flex: 1; text-align: right;">
-    <img src="assets/fig/cpp.JPG" alt="Chiku Parida" width="360px" style="max-width: 100%; height: auto;">
+    <img src="/assets/fig/cpp.JPG" alt="Chiku Parida" width="360px" style="max-width: 100%; height: auto;">
   </div>
 </div>
 
