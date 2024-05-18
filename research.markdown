@@ -68,3 +68,179 @@ Link to the publication site...
 
 #### Selected works
 
+
+
+# Example Markdown with Image and Text Layout
+
+Below is an example of using HTML within a Markdown file to create a layout with an image on the right and text on the left.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Layout</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Title of the Description</h1>
+            <p>This is a paragraph of text that serves as the description. You can add more text here to elaborate on the topic. This section will contain all the information you want to convey to the reader.</p>
+            <p>Another paragraph of text can go here to provide additional details. Feel free to add as many paragraphs as needed to fully describe the content.</p>
+        </div>
+        <div class="image">
+            <img src="# Example Markdown with Image and Text Layout
+
+Below is an example of using HTML within a Markdown file to create a layout with an image on the right and text on the left.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Layout</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Title of the Description</h1>
+            <p>This is a paragraph of text that serves as the description. You can add more text here to elaborate on the topic. This section will contain all the information you want to convey to the reader.</p>
+            <p>Another paragraph of text can go here to provide additional details. Feel free to add as many paragraphs as needed to fully describe the content.</p>
+        </div>
+        <div class="image">
+            <img src="# Example Markdown with Image and Text Layout
+
+Below is an example of using HTML within a Markdown file to create a layout with an image on the right and text on the left.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Layout</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Title of the Description</h1>
+            <p>This is a paragraph of text that serves as the description. You can add more text here to elaborate on the topic. This section will contain all the information you want to convey to the reader.</p>
+            <p>Another paragraph of text can go here to provide additional details. Feel free to add as many paragraphs as needed to fully describe the content.</p>
+        </div>
+        <div class="image">
+            <img src="" alt="Description of # Example Markdown with Image and Text Layout
+
+Below is an example of using HTML within a Markdown file to create a layout with an image on the right and text on the left.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Text Layout</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Title of the Description</h1>
+            <p>This is a paragraph of text that serves as the description. You can add more text here to elaborate on the topic. This section will contain all the information you want to convey to the reader.</p>
+            <p>Another paragraph of text can go here to provide additional details. Feel free to add as many paragraphs as needed to fully describe the content.</p>
+        </div>
+        <div class="image">
+            <img src="path/to/your/image.jpg" alt="Description of the image">
+        </div>
+    </div>
+</body>
+</html>
+the image">
+        </div>
+    </div>
+</body>
+</html>
+" alt="Description of the image">
+        </div>
+    </div>
+</body>
+</html>
+" alt="Description of the image">
+        </div>
+    </div>
+</body>
+</html>
+
+
