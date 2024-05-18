@@ -71,8 +71,6 @@ Link to the publication site...
 
 # Example Markdown with Image and Text Layout
 
-Below is an example of using HTML within a Markdown file to create a layout with an image on the right and text on the left.
-
 <div style="clear: both;">
   <div style="float: right; margin-left: 1em;">
     <img src="assets/fig/cpp.JPG" alt="" style="max-width: 100%; height: auto;">
