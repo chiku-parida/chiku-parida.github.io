@@ -68,7 +68,6 @@ Link to the publication site...
 
 #### Selected works
 
-#{% include module.html image_path="assets/fig/cpp.JPG" title="Some title text" description="Some more text that will appear to the left of the image." %}
 
 <div style="clear: both;">
   <div style="float: left; margin-right 1em;">
