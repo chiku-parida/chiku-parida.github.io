@@ -68,3 +68,5 @@ Link to the publication site...
 
 #### Selected works
 
+{% include module.html image_path="assets/fig/cpp.JPG" title="Some title text" description="Some more text that will appear to the left of the image." %}
+
