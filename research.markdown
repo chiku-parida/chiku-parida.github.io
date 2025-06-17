@@ -27,7 +27,7 @@ The main motive of this project is to develop a deep generative model to perform
 batteries.
 
 - Deep generative model: Periodic diffusion model development with target properties (e.g. ­ stability, high conductivity, etc.)
-- Design and discovery of high conductive solid electrolytes for Li­ion batteries
+- Design and discovery of high conductive solid electrolytes for Li-­ion batteries
 - Hamiltonian-based semi-quantum mechanical dynamic studies of the ionic conductivity of electrolytes
 
 
