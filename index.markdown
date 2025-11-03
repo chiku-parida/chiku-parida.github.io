@@ -13,7 +13,7 @@ I am extremely grateful to receive funding from the following sources:
 * Technical University of Denmark - DTU 
 * ALLIANCE Grant
 
-Here is my [CV](assets/files/Chikuparida_dtu_energy_cv.pdf){:target="_blank"} for more details.
+Here is my [CV](assets/files/CP_CV_2_page2.pdf){:target="_blank"} for more details.
 
 *Note: This site is under maintenance!*
 
