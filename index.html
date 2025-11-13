@@ -1,0 +1,1215 @@
+---
+layout: null
+title: "Home"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} | {{ site.title | default: "Chiku Parida" }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Personal website of Chiku Parida – doctoral researcher working on inverse design of solid electrolytes for solid-state batteries."
+  />
+  <style>
+    :root {
+      --bg: #020617;
+      --bg-elevated: #020817;
+      --bg-soft: #020617;
+      --accent: #6366f1;
+      --accent-soft: rgba(99, 102, 241, 0.12);
+      --accent-strong: #4f46e5;
+      --border-subtle: rgba(148, 163, 184, 0.2);
+      --text-main: #e5e7eb;
+      --text-soft: #9ca3af;
+      --text-softer: #6b7280;
+      --text-strong: #f9fafb;
+      --danger: #f97373;
+      --radius-lg: 1.5rem;
+      --radius-md: 0.9rem;
+      --radius-pill: 999px;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+      --shadow-subtle: 0 12px 30px rgba(15, 23, 42, 0.6);
+      --transition-fast: 180ms ease-out;
+      --transition-med: 220ms ease-out;
+      --nav-height: 4.25rem;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top left, #111827 0, #020617 45%);
+      color: var(--text-main);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ---------- Header / Nav ---------- */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(
+        to bottom,
+        rgba(2, 6, 23, 0.92),
+        rgba(2, 6, 23, 0.75),
+        transparent
+      );
+      border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+    }
+
+    .nav-bar {
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+    }
+
+    .brand span {
+      font-weight: 500;
+      color: var(--text-soft);
+      font-size: 0.8rem;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      padding: 0.3rem 0;
+      position: relative;
+      color: var(--text-soft);
+      transition: color var(--transition-fast);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.35rem;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-strong));
+      transition: width var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: var(--text-strong);
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.is-active::after {
+      width: 100%;
+    }
+
+    .nav-links a.is-active {
+      color: var(--text-strong);
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-radius: var(--radius-pill);
+      padding: 0.4rem 0.85rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--text-soft);
+      background: radial-gradient(
+        circle at top left,
+        rgba(99, 102, 241, 0.16),
+        transparent 55%
+      );
+      transition: background var(--transition-fast),
+        border-color var(--transition-fast), transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+    }
+
+    .nav-cta span {
+      font-size: 1.1rem;
+      line-height: 0;
+    }
+
+    .nav-cta:hover {
+      border-color: rgba(129, 140, 248, 0.9);
+      background: radial-gradient(
+        circle at top left,
+        rgba(129, 140, 248, 0.26),
+        transparent 60%
+      );
+      box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.35);
+      transform: translateY(-1px);
+      color: var(--text-strong);
+    }
+
+    .nav-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      padding: 0.2rem;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      border-radius: 999px;
+      background: var(--text-main);
+      transition: transform var(--transition-fast),
+        opacity var(--transition-fast);
+    }
+
+    .nav-toggle span + span {
+      margin-top: 4px;
+      width: 14px;
+      margin-left: auto;
+    }
+
+    /* ---------- Hero ---------- */
+
+    main {
+      padding-bottom: 4rem;
+    }
+
+    .hero {
+      padding: 4rem 0 3.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2.3fr);
+      gap: 2.75rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.18rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: var(--text-soft);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #22c55e, #16a34a);
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.2);
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 3vw + 1.5rem, 3.3rem);
+      letter-spacing: -0.04em;
+      margin: 0 0 1rem;
+      color: var(--text-strong);
+    }
+
+    .hero-lead {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-soft);
+      max-width: 36rem;
+      margin-bottom: 1.7rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.9rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.2rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.88rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background var(--transition-med), transform var(--transition-fast),
+        box-shadow var(--transition-med), border-color var(--transition-med),
+        color var(--transition-med);
+    }
+
+    .btn-primary {
+      background: radial-gradient(circle at 0 0, #a5b4fc, #6366f1);
+      color: #0b1020;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1.5px);
+      box-shadow: 0 20px 55px rgba(15, 23, 42, 0.9);
+      background: radial-gradient(circle at 0 0, #c7d2fe, #4f46e5);
+    }
+
+    .btn-ghost {
+      border-color: rgba(148, 163, 184, 0.4);
+      color: var(--text-main);
+      background: rgba(15, 23, 42, 0.9);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(148, 163, 184, 0.9);
+      background: rgba(15, 23, 42, 1);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .btn-icon {
+      font-size: 1.05rem;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.9rem;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .hero-meta-item {
+      border-radius: 0.9rem;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      padding: 0.75rem 0.9rem;
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.9), #020617);
+    }
+
+    .hero-meta-label {
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.66rem;
+      color: var(--text-softer);
+      margin-bottom: 0.35rem;
+    }
+
+    .hero-meta-value {
+      font-size: 0.82rem;
+      color: var(--text-main);
+    }
+
+    /* Right column card */
+
+    .hero-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(148, 163, 184, 0.35);
+      background: radial-gradient(
+          circle at top left,
+          rgba(129, 140, 248, 0.32),
+          transparent 55%
+        ),
+        radial-gradient(
+          circle at bottom right,
+          rgba(8, 47, 73, 0.65),
+          rgba(15, 23, 42, 0.95)
+        );
+      padding: 1.7rem 1.7rem 1.4rem;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(
+          circle at 10% 0%,
+          rgba(248, 250, 252, 0.1),
+          transparent 55%
+        ),
+        radial-gradient(
+          circle at 90% 20%,
+          rgba(129, 140, 248, 0.18),
+          transparent 60%
+        );
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    .hero-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 999px;
+      border: 2px solid rgba(248, 250, 252, 0.9);
+      background: radial-gradient(circle at 30% 20%, #c4b5fd, #4f46e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #f9fafb;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-avatar-note {
+      font-size: 0.7rem;
+      color: rgba(248, 250, 252, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-card-title {
+      font-size: 0.96rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .hero-card-body {
+      font-size: 0.8rem;
+      color: rgba(226, 232, 240, 0.9);
+      line-height: 1.6;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: rgba(15, 23, 42, 0.9);
+      color: rgba(226, 232, 240, 0.9);
+    }
+
+    .hero-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.78rem;
+      color: rgba(226, 232, 240, 0.85);
+      margin-top: 0.3rem;
+    }
+
+    .hero-dot-row {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .hero-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(226, 232, 240, 0.8);
+      opacity: 0.4;
+    }
+
+    .hero-dot.is-active {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    .hero-social {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .hero-social a {
+      font-size: 0.78rem;
+      padding: 0.35rem 0.6rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      background: rgba(15, 23, 42, 0.9);
+      color: rgba(226, 232, 240, 0.9);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      transition: border-color var(--transition-fast),
+        background var(--transition-fast), transform var(--transition-fast),
+        box-shadow var(--transition-fast);
+    }
+
+    .hero-social a span.icon {
+      font-size: 0.95rem;
+    }
+
+    .hero-social a:hover {
+      border-color: rgba(129, 140, 248, 0.9);
+      background: rgba(15, 23, 42, 1);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    /* ---------- Sections ---------- */
+
+    section {
+      padding: 2.75rem 0 0;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.5rem;
+      margin-bottom: 1.8rem;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text-strong);
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-softer);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.87rem;
+      color: var(--text-soft);
+      max-width: 26rem;
+    }
+
+    /* Highlights grid */
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      padding: 1.1rem 1.1rem 1.05rem;
+      background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.9)
+      );
+      box-shadow: 0 14px 35px rgba(15, 23, 42, 0.85);
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition-med), box-shadow var(--transition-med),
+        border-color var(--transition-med), background var(--transition-med);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(
+        circle at 0 0,
+        rgba(129, 140, 248, 0.18),
+        transparent 55%
+      );
+      opacity: 0;
+      transition: opacity var(--transition-med), transform var(--transition-med);
+      z-index: -1;
+    }
+
+    .card:hover {
+      transform: translateY(-4px) translateZ(0);
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.95);
+      border-color: rgba(129, 140, 248, 0.8);
+      background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.98),
+        rgba(15, 23, 42, 0.95)
+      );
+    }
+
+    .card:hover::before {
+      opacity: 1;
+      transform: translate(4%, -4%);
+    }
+
+    .card-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #a5b4fc, #4f46e5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      color: #f9fafb;
+      margin-bottom: 0.8rem;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .card-body {
+      font-size: 0.84rem;
+      color: var(--text-soft);
+      line-height: 1.65;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.8rem;
+      color: #c7d2fe;
+    }
+
+    .card-link span {
+      font-size: 1rem;
+    }
+
+    /* News */
+
+    .news-list {
+      display: grid;
+      gap: 0.8rem;
+    }
+
+    .news-item {
+      border-radius: 0.9rem;
+      border: 1px solid var(--border-subtle);
+      padding: 0.8rem 0.9rem;
+      background: rgba(15, 23, 42, 0.98);
+      font-size: 0.8rem;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 0.75rem 1rem;
+      align-items: flex-start;
+    }
+
+    .news-tag {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-softer);
+      margin-bottom: 0.25rem;
+    }
+
+    .news-heading {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 0.25rem;
+    }
+
+    .news-body {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      line-height: 1.6;
+    }
+
+    .news-meta {
+      font-size: 0.75rem;
+      color: var(--text-softer);
+    }
+
+    /* Contact */
+
+    .contact-card {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      padding: 1.2rem 1.1rem 1.2rem;
+      margin-top: 0.2rem;
+      background: linear-gradient(
+        135deg,
+        rgba(15, 23, 42, 0.98),
+        rgba(15, 23, 42, 0.96)
+      );
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+      gap: 1.5rem;
+      align-items: center;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.9);
+    }
+
+    .contact-text {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      line-height: 1.7;
+    }
+
+    .contact-highlight {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      margin-bottom: 0.3rem;
+    }
+
+    .contact-meta {
+      font-size: 0.78rem;
+      color: var(--text-softer);
+      margin-top: 0.4rem;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: flex-end;
+    }
+
+    .contact-chip {
+      font-size: 0.78rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      color: var(--text-main);
+      background: rgba(15, 23, 42, 0.96);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .contact-chip span.icon {
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+
+    .site-footer {
+      padding: 2.8rem 0 1.8rem;
+      font-size: 0.78rem;
+      color: var(--text-softer);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(148, 163, 184, 0.4);
+      padding-top: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .footer-links a {
+      color: var(--text-softer);
+    }
+
+    .footer-links a:hover {
+      color: var(--text-main);
+    }
+
+    /* ---------- Responsive ---------- */
+
+    @media (max-width: 880px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .hero-card {
+        order: -1;
+      }
+
+      .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .highlights-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .contact-card {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav-toggle {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .nav-links {
+        position: absolute;
+        inset-inline: 0;
+        top: var(--nav-height);
+        padding: 0.75rem 1.5rem 0.9rem;
+        background: rgba(2, 6, 23, 0.98);
+        border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+        transform-origin: top;
+        transform: scaleY(0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--transition-fast),
+          transform var(--transition-fast);
+      }
+
+      .nav-links.is-open {
+        opacity: 1;
+        transform: scaleY(1);
+        pointer-events: auto;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 0.45rem 0;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 3.2rem;
+      }
+
+      .hero-card {
+        margin-top: 0.4rem;
+      }
+
+      .highlights-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .section-heading {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-meta {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .site-footer {
+        padding-top: 2.3rem;
+      }
+    }
+
+    /* Accessibility focus styles */
+
+    :where(a, button):focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="{{ "/" | relative_url }}" class="brand">
+        CHIKU&nbsp;PARIDA
+        <span>Research &nbsp;·&nbsp; Materials&nbsp;AI</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#hero" class="is-active">Home</a>
+        <a href="{{ "/research" | relative_url }}">Research</a>
+        <a href="{{ "/teaching" | relative_url }}">Teaching</a>
+        <a href="{{ "/blog" | relative_url }}">Blogs</a>
+        <a href="{{ "/hobbies" | relative_url }}">Hobbies</a>
+        <a href="{{ "/contacts" | relative_url }}">Contact</a>
+      </nav>
+
+      <a href="{{ "/assets/CV.pdf" | relative_url }}" class="nav-cta">
+        CV &nbsp;·&nbsp; Overview <span>↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="hero">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Doctoral researcher · DTU Energy
+          </div>
+
+          <h1>Designing solid-state batteries with generative models</h1>
+
+          <p class="hero-lead">
+            I work on inverse design of solid electrolytes for solid-state
+            batteries, combining quantum chemistry, high-throughput workflows
+            and modern generative modelling in collaboration with DTU Energy and
+            the University of Queensland.
+          </p>
+
+          <div class="hero-actions">
+            <a href="{{ "/research" | relative_url }}" class="btn btn-primary">
+              <span>Explore research</span>
+              <span class="btn-icon">→</span>
+            </a>
+
+            <a href="{{ "/blog" | relative_url }}" class="btn btn-ghost">
+              <span>Latest notes &amp; blog posts</span>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <div class="hero-meta-label">Themes</div>
+              <div class="hero-meta-value">
+                Inverse design · Materials informatics · Solid electrolytes
+              </div>
+            </div>
+            <div class="hero-meta-item">
+              <div class="hero-meta-label">Affiliations</div>
+              <div class="hero-meta-value">
+                DTU&nbsp;Energy · University of Queensland
+              </div>
+            </div>
+            <div class="hero-meta-item">
+              <div class="hero-meta-label">Currently</div>
+              <div class="hero-meta-value">
+                Developing generative workflows for fast-ion conductors and
+                benchmarking candidates for all-solid-state batteries.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="At a glance">
+          <div class="hero-avatar">CP</div>
+
+          <div class="hero-avatar-note">Overview</div>
+          <div class="hero-card-title">
+            Inverse design for solid-state electrolytes
+          </div>
+          <div class="hero-card-body">
+            Bridging atomistic simulations and data-driven models to discover
+            robust and scalable solid electrolytes that could power safer
+            next-generation batteries.
+          </div>
+
+          <div class="hero-tags">
+            <span class="hero-tag">Solid-state batteries</span>
+            <span class="hero-tag">Generative models</span>
+            <span class="hero-tag">Materials design</span>
+          </div>
+
+          <div class="hero-card-footer">
+            <div class="hero-dot-row" aria-hidden="true">
+              <span class="hero-dot is-active"></span>
+              <span class="hero-dot"></span>
+              <span class="hero-dot"></span>
+            </div>
+
+            <div class="hero-social">
+              <a href="https://github.com/chiku-parida" target="_blank" rel="noreferrer">
+                <span class="icon">⟡</span>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span class="icon">◎</span>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section id="highlights">
+      <div class="container">
+        <header class="section-heading">
+          <div>
+            <div class="section-kicker">On this site</div>
+            <h2 class="section-title">A quick tour of what you can find</h2>
+          </div>
+          <p class="section-subtitle">
+            Short overviews, full papers, teaching materials and more. The goal
+            is to keep everything lightweight, readable and research-focused.
+          </p>
+        </header>
+
+        <div class="highlights-grid">
+          <article class="card">
+            <div class="card-icon">R</div>
+            <h3 class="card-title">Research</h3>
+            <p class="card-body">
+              Projects, preprints and publications around inverse design,
+              electrolyte discovery and data-driven materials science.
+            </p>
+            <a href="{{ "/research" | relative_url }}" class="card-link">
+              View research overview <span>↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">T</div>
+            <h3 class="card-title">Teaching</h3>
+            <p class="card-body">
+              Courses, guest lectures and teaching material at the intersection
+              of computational chemistry, machine learning and energy storage.
+            </p>
+            <a href="{{ "/teaching" | relative_url }}" class="card-link">
+              Browse teaching <span>↗</span>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">N</div>
+            <h3 class="card-title">Notes &amp; blogs</h3>
+            <p class="card-body">
+              Informal posts on workflows, tools, conferences and ideas that
+              don’t quite fit into a paper format.
+            </p>
+            <a href="{{ "/blog" | relative_url }}" class="card-link">
+              Read recent posts <span>↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent news (static summary – edit as you like) -->
+    <section id="news">
+      <div class="container">
+        <header class="section-heading">
+          <div>
+            <div class="section-kicker">Recent news</div>
+            <h2 class="section-title">What has been happening lately</h2>
+          </div>
+          <p class="section-subtitle">
+            A compact snapshot of recent schools, workshops and events related
+            to generative models and materials design.
+          </p>
+        </header>
+
+        <div class="news-list">
+          <article class="news-item">
+            <div class="news-meta">Summer school</div>
+            <div>
+              <div class="news-heading">
+                Generative Modelling Summer School, Pioneer Centre for AI
+              </div>
+              <div class="news-body">
+                Selected to attend and present work on generative approaches for
+                solid electrolytes at the GeMSS summer school hosted at the
+                Pioneer Centre for Artificial Intelligence.
+              </div>
+            </div>
+          </article>
+
+          <article class="news-item">
+            <div class="news-meta">Workshop</div>
+            <div>
+              <div class="news-heading">
+                CECAM: Open Databases Integration for Materials Design
+              </div>
+              <div class="news-body">
+                Participated in discussions on interoperable databases and the
+                OPTIMADE API for high-throughput materials discovery and
+                screening workflows.
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <header class="section-heading">
+          <div>
+            <div class="section-kicker">Get in touch</div>
+            <h2 class="section-title">Open to collaborations &amp; questions</h2>
+          </div>
+          <p class="section-subtitle">
+            If you’re interested in solid-state batteries, generative models for
+            materials, or you simply have questions, feel free to reach out.
+          </p>
+        </header>
+
+        <div class="contact-card">
+          <div>
+            <div class="contact-highlight">
+              The easiest way to contact me is via email.
+            </div>
+            <p class="contact-text">
+              I’m always happy to talk about research ideas, potential
+              collaborations or simply to compare notes on tools and workflows
+              for materials informatics.
+            </p>
+            <div class="contact-meta">
+              Please allow some time for replies during busy teaching or travel
+              periods.
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:cparida.ai@gmail.com" class="btn btn-primary">
+              <span class="btn-icon">✉</span>
+              <span>Email me</span>
+            </a>
+            <div class="contact-chip">
+              <span class="icon">◎</span>
+              Academic networks &nbsp;·&nbsp; Conferences &nbsp;·&nbsp; Mentoring
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        &copy; {{ site.time | date: "%Y" }} Chiku Parida. Built for clarity and
+        fast reading.
+      </div>
+      <div class="footer-links">
+        <a href="{{ "/research" | relative_url }}">Research</a>
+        <a href="{{ "/teaching" | relative_url }}">Teaching</a>
+        <a href="{{ "/blog" | relative_url }}">Blog</a>
+        <a href="{{ "/contacts" | relative_url }}">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const toggle = document.querySelector(".nav-toggle");
+      const nav = document.querySelector(".nav-links");
+
+      if (!toggle || !nav) return;
+
+      toggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("is-open");
+        toggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      nav.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (nav.classList.contains("is-open")) {
+            nav.classList.remove("is-open");
+            toggle.setAttribute("aria-expanded", "false");
+          }
+        });
+      });
+
+      const sections = document.querySelectorAll("main section[id]");
+      const navLinks = nav.querySelectorAll("a[href^='#']");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const id = entry.target.getAttribute("id");
+            navLinks.forEach((link) => {
+              link.classList.toggle(
+                "is-active",
+                link.getAttribute("href") === "#" + id
+              );
+            });
+          });
+        },
+        { rootMargin: "-50% 0px -40% 0px", threshold: 0.1 }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    })();
+  </script>
+</body>
+</html>
