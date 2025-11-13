@@ -1,6 +1,6 @@
 ---
 layout: null
-title: "Home"
+title: "Research"
 ---
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ title: "Home"
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Personal website of Chiku Parida – doctoral researcher working on inverse design of solid electrolytes for solid-state batteries."
+    content="Research by Chiku Parida on inverse design, solid-state batteries and materials informatics."
   />
   <style>
     :root {
@@ -354,7 +354,7 @@ title: "Home"
       color: var(--text-main);
     }
 
-    /* Right column card */
+    /* Right column card (not used here but kept for consistency) */
 
     .hero-card {
       border-radius: var(--radius-lg);
@@ -638,7 +638,7 @@ title: "Home"
       font-size: 1rem;
     }
 
-    /* News */
+    /* News-style list */
 
     .news-list {
       display: grid;
@@ -655,14 +655,6 @@ title: "Home"
       grid-template-columns: auto minmax(0, 1fr);
       gap: 0.75rem 1rem;
       align-items: flex-start;
-    }
-
-    .news-tag {
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--text-softer);
-      margin-bottom: 0.25rem;
     }
 
     .news-heading {
@@ -682,7 +674,7 @@ title: "Home"
       color: var(--text-softer);
     }
 
-    /* Contact */
+    /* Contact card */
 
     .contact-card {
       border-radius: var(--radius-md);
@@ -884,7 +876,7 @@ title: "Home"
     <div class="container nav-bar">
       <a href="{{ "/" | relative_url }}" class="brand">
         CHIKU&nbsp;PARIDA
-        <span> Physicist &nbsp;·&nbsp; Materials&nbsp;AI</span>
+        <span>Research &nbsp;·&nbsp; Materials&nbsp;AI</span>
       </a>
 
       <button
@@ -897,8 +889,8 @@ title: "Home"
       </button>
 
       <nav class="nav-links" aria-label="Primary">
-        <a href="#hero" class="is-active">Home</a>
-        <a href="{{ "/research" | relative_url }}">Research</a>
+        <a href="{{ "/" | relative_url }}">Home</a>
+        <a href="{{ "/research" | relative_url }}" class="is-active">Research</a>
         <a href="{{ "/teaching" | relative_url }}">Teaching</a>
         <a href="{{ "/blog" | relative_url }}">Blogs</a>
         <a href="{{ "/hobbies" | relative_url }}">Hobbies</a>
@@ -911,239 +903,228 @@ title: "Home"
     </div>
   </header>
 
-  <main id="hero">
+  <main id="top">
     <!-- Hero -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow">
-            <span class="eyebrow-dot"></span>
-            Doctoral researcher · DTU Energy
-          </div>
+      <div class="container">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Research · Materials AI &amp; Energy
+        </div>
 
-          <h1>Designing Future Materials using Physics-Informed AI and Experiments</h1>
+        <h1>Research in materials AI &amp; solid-state batteries</h1>
 
-          <p class="hero-lead">
-            I work on inverse design of solid electrolytes for solid-state
-            batteries, combining quantum chemistry, high-throughput workflows
-            and modern generative modelling in collaboration with DTU Energy and
-            the University of Queensland.
-          </p>
+        <p class="hero-lead">
+          I work at the intersection of atomistic simulations, data-driven
+          models and inverse design, with a focus on solid electrolytes
+          for all-solid-state batteries and related energy materials.
+        </p>
 
-          <div class="hero-actions">
-            <a href="{{ "/research" | relative_url }}" class="btn btn-primary">
-              <span>Explore research</span>
-              <span class="btn-icon">→</span>
-            </a>
-
-            <a href="{{ "/blog" | relative_url }}" class="btn btn-ghost">
-              <span>Latest notes &amp; blog posts</span>
-            </a>
-          </div>
-
-          <div class="hero-meta">
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">Themes</div>
-              <div class="hero-meta-value">
-                Inverse design · Materials informatics · Methods development
-              </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="hero-meta-label">Current position</div>
+            <div class="hero-meta-value">
+              Doctoral researcher, DTU Energy<br />
+              Deep generative models for solid electrolytes
             </div>
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">Affiliations</div>
-              <div class="hero-meta-value">
-                DTU&nbsp;Energy · University of Queensland
-              </div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-label">Research themes</div>
+            <div class="hero-meta-value">
+              Inverse design · Generative modelling · Fast-ion conductors
             </div>
-            <div class="hero-meta-item">
-              <div class="hero-meta-label">Currently</div>
-              <div class="hero-meta-value">
-                Developing generative workflows for fast-ion conductors and
-                benchmarking candidates for all-solid-state batteries.
-              </div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="hero-meta-label">Collaborations</div>
+            <div class="hero-meta-value">
+              DTU Energy · University of Queensland · Industry partners
             </div>
           </div>
         </div>
-
-        <aside class="hero-card" aria-label="At a glance">
-          <div class="hero-avatar">CP</div>
-
-          <div class="hero-avatar-note">Overview</div>
-          <div class="hero-card-title">
-            Inverse design for solid-state electrolytes
-          </div>
-          <div class="hero-card-body">
-            Bridging atomistic simulations and data-driven models to discover
-            robust and scalable solid electrolytes that could power safer
-            next-generation batteries.
-          </div>
-
-          <div class="hero-tags">
-            <span class="hero-tag">Solid-state batteries</span>
-            <span class="hero-tag">Generative models</span>
-            <span class="hero-tag">Materials design</span>
-          </div>
-
-          <div class="hero-card-footer">
-            <div class="hero-dot-row" aria-hidden="true">
-              <span class="hero-dot is-active"></span>
-              <span class="hero-dot"></span>
-              <span class="hero-dot"></span>
-            </div>
-
-            <div class="hero-social">
-              <a href="https://github.com/chiku-parida" target="_blank" rel="noreferrer">
-                <span class="icon">⟡</span>
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/chikuparida"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span class="icon">◎</span>
-                <span>LinkedIn</span>
-              </a>
-            </div>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <!-- Highlights -->
-    <section id="highlights">
+    <!-- Current PhD project -->
+    <section id="phd-project">
       <div class="container">
         <header class="section-heading">
           <div>
-            <div class="section-kicker">On this site</div>
-            <h2 class="section-title">A quick tour of what you can find</h2>
+            <div class="section-kicker">PhD project</div>
+            <h2 class="section-title">
+              Deep generative models for inverse design of solid electrolytes
+            </h2>
           </div>
           <p class="section-subtitle">
-            Short overviews.
+            The long-term goal is to accelerate the discovery of stable,
+            high-conductivity solid electrolytes that can enable safer and more
+            efficient all-solid-state batteries.
           </p>
         </header>
 
         <div class="highlights-grid">
           <article class="card">
-            <div class="card-icon">R</div>
-            <h3 class="card-title">Research</h3>
+            <div class="card-icon">1</div>
+            <h3 class="card-title">Motivation</h3>
             <p class="card-body">
-              Projects, preprints and publications around inverse design,
-              electrolyte discovery and data-driven materials science.
+              The transition to green energy requires safe, scalable and
+              affordable energy storage. Solid-state batteries promise higher
+              energy densities and improved safety compared to conventional
+              liquid-electrolyte cells.
             </p>
-            <a href="{{ "/research" | relative_url }}" class="card-link">
-              View research overview <span>↗</span>
-            </a>
+            <p class="card-body">
+              Discovering suitable solid electrolytes is challenging because of
+              the vast chemical and structural design space and the demanding
+              stability and conductivity requirements.
+            </p>
           </article>
 
           <article class="card">
-            <div class="card-icon">T</div>
-            <h3 class="card-title">Teaching</h3>
+            <div class="card-icon">2</div>
+            <h3 class="card-title">Approach</h3>
             <p class="card-body">
-              Courses, guest lectures and teaching material at the intersection
-              of computational chemistry, machine learning and energy storage.
+              I develop periodic deep generative models that can propose
+              candidate crystal structures conditioned on target properties
+              such as thermodynamic stability and ionic conductivity.
             </p>
-            <a href="{{ "/teaching" | relative_url }}" class="card-link">
-              Browse teaching <span>↗</span>
-            </a>
+            <p class="card-body">
+              These models are integrated with high-throughput first-principles
+              calculations and workflows for screening and refinement.
+            </p>
           </article>
 
           <article class="card">
-            <div class="card-icon">N</div>
-            <h3 class="card-title">Notes &amp; blogs</h3>
+            <div class="card-icon">3</div>
+            <h3 class="card-title">Objectives</h3>
             <p class="card-body">
-              Informal posts on workflows, tools, conferences and ideas that
-              don’t quite fit into a paper format.
+              The overarching goals of the project include:
             </p>
-            <a href="{{ "/blog" | relative_url }}" class="card-link">
-              Read recent posts <span>↗</span>
-            </a>
+            <ul class="card-body">
+              <li>Design of solid electrolytes with high Li-ion conductivity.</li>
+              <li>
+                Development of generative models tailored to periodic materials.
+              </li>
+              <li>
+                Understanding ionic transport mechanisms via atomistic
+                simulations and model analysis.
+              </li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Recent news (static summary – edit as you like) -->
-    <section id="news">
+    <!-- Previous & parallel research -->
+    <section id="experience">
       <div class="container">
         <header class="section-heading">
           <div>
-            <div class="section-kicker">Recent news</div>
-            <h2 class="section-title">What has been happening lately</h2>
+            <div class="section-kicker">Previous &amp; parallel work</div>
+            <h2 class="section-title">Broader research experience</h2>
           </div>
           <p class="section-subtitle">
-            A compact snapshot of recent schools, workshops and events related
-            to materials design.
+            Before focusing on solid-state batteries, I worked on atomistic
+            modelling of solid–liquid interfaces, electronic properties
+            of topological materials and high-throughput discovery of
+            functional materials.
           </p>
         </header>
 
-        <div class="news-list">
-          <article class="news-item">
-            <div class="news-meta">Summer school</div>
-            <div>
-              <div class="news-heading">
-                Generative Modelling Summer School, Pioneer Centre for AI
-              </div>
-              <div class="news-body">
-                Selected to attend and present work on generative approaches for
-                solid electrolytes at the GeMSS summer school hosted at the
-                Pioneer Centre for Artificial Intelligence.
-              </div>
-            </div>
+        <div class="highlights-grid">
+          <!-- Qpi Volta -->
+          <article class="card">
+            <div class="card-icon">Q</div>
+            <h3 class="card-title">Qpi Volta Technologies</h3>
+            <p class="card-body">
+              At Qpi Volta I contributed to projects on high-throughput
+              discovery of solid electrolytes for Na-ion batteries,
+              machine-learning interatomic potentials for interfaces,
+              and environmentally friendly materials for diverse applications.
+            </p>
+            <p class="card-body">
+              This work connected industrial needs in energy materials with
+              state-of-the-art simulation and data-driven methods.
+            </p>
           </article>
 
-          <article class="news-item">
-            <div class="news-meta">Workshop</div>
-            <div>
-              <div class="news-heading">
-                CECAM: Open Databases Integration for Materials Design
-              </div>
-              <div class="news-body">
-                Participated in discussions on interoperable databases and the
-                OPTIMADE API for high-throughput materials discovery and
-                screening workflows.
-              </div>
-            </div>
+          <!-- JNCASR -->
+          <article class="card">
+            <div class="card-icon">J</div>
+            <h3 class="card-title">
+              Jawaharlal Nehru Centre for Advanced Scientific Research
+            </h3>
+            <p class="card-body">
+              At JNCASR I worked on atomistic modelling of solid–liquid
+              interfaces, studying the dissolution of platinum in water using
+              first-principles simulations, in collaboration with researchers
+              at Lawrence Livermore National Laboratory.
+            </p>
+            <p class="card-body">
+              The project combined surface science, electrochemistry and
+              ab-initio modelling.
+            </p>
+          </article>
+
+          <!-- IIT-BHU -->
+          <article class="card">
+            <div class="card-icon">I</div>
+            <h3 class="card-title">Indian Institute of Technology (BHU)</h3>
+            <p class="card-body">
+              During my Master’s at IIT-BHU I studied electronic properties of
+              topological insulators and Weyl semimetals using
+              first-principles calculations, with a broader background in
+              condensed matter physics and quantum information.
+            </p>
+            <p class="card-body">
+              This early work shaped my interest in materials informatics
+              and quantum-mechanical modelling.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
+    <!-- Publications -->
+    <section id="publications">
       <div class="container">
         <header class="section-heading">
           <div>
-            <div class="section-kicker">Get in touch</div>
-            <h2 class="section-title">Open to collaborations &amp; questions</h2>
+            <div class="section-kicker">Publications &amp; output</div>
+            <h2 class="section-title">Papers, talks &amp; open resources</h2>
           </div>
           <p class="section-subtitle">
-            If you’re interested in atomistic modeling, generative models for
-            materials, or you simply have questions, feel free to reach out.
+            A full, always-up-to-date list of publications and research outputs
+            is maintained in institutional databases and academic profiles.
           </p>
         </header>
 
         <div class="contact-card">
           <div>
             <div class="contact-highlight">
-              The easiest way to contact me is via email.
+              For the complete publication list, please see my DTU profile.
             </div>
             <p class="contact-text">
-              I’m always happy to talk about research ideas, potential
-              collaborations or simply to compare notes on tools and workflows
-              for materials informatics.
+              The DTU Research Database entry aggregates peer-reviewed articles,
+              conference contributions and related outputs linked to my
+              affiliations.
             </p>
             <div class="contact-meta">
-              Please allow some time for replies!
+              Additional resources, preprints and code may also appear on GitHub
+              and other platforms linked from the homepage.
             </div>
           </div>
           <div class="contact-actions">
-            <a href="mailto:cparida.ai@gmail.com" class="btn btn-primary">
-              <span class="btn-icon">✉</span>
-              <span>Email me</span>
+            <a
+              href="https://orbit.dtu.dk/en/persons/chiku-parida/"
+              target="_blank"
+              rel="noreferrer"
+              class="btn btn-primary"
+            >
+              <span class="btn-icon">↗</span>
+              <span>DTU publication profile</span>
             </a>
             <div class="contact-chip">
-              <span class="icon">◎</span>
-              Academic networks &nbsp;·&nbsp; Collaborations
+              <span class="icon">⟡</span>
+              Preprints · Talks · Code
             </div>
           </div>
         </div>
